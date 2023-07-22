@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+<!-- blank -->
+{% block sass_link %}
+<!-- blank -->
+{% load sass_tags %}
+<link
+  href="{% sass_src 'scss/pages/index/styles.scss' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- blank -->
+{% endblock %}
+<!-- blank -->
+{% block title %} SASS Handiworks {% endblock %}
+<!-- blank -->
+{% block content %}
+
+<h1><span>SASS</span> Handiworks</h1>
+
+<div>
+  <ul>
+    <li><a href="pages/horror/">Horror</a></li>
+    <li><a href="pages/10x19/">10x19</a></li>
+    <li><a href="pages/paintbox/">Paintbox</a></li>
+    <li><a href="pages/beige/">Beige</a></li>
+  </ul>
+  <ul>
+    <li><a href="pages/tolv/">Tolv</a></li>
+    <li><a href="pages/rodic/">Rodic</a></li>
+    <li><a href="pages/schwartz/">Schwartz</a></li>
+    <li><a href="pages/zoo/">Zoo</a></li>
+  </ul>
+</div>
+
+{% endblock %}

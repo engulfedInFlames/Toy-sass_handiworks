@@ -1,0 +1,16 @@
+@import "../../reset";
+@import "main";
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background-color: $firstColor;
+  height: 100vh;
+}

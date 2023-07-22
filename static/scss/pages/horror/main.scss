@@ -1,0 +1,155 @@
+$firstColor: #e7473c;
+$secondColor: #9b2511;
+$thirdColor: #d9281c;
+$bgColor: #f0f0f0;
+
+#container__horror {
+  position: inherit;
+  height: inherit;
+  header {
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 65px 0 50px 75px;
+    background-color: $bgColor;
+    h1,
+    ul,
+    p {
+      width: 80%;
+    }
+    h1 {
+      margin-bottom: 40px;
+      font-size: 72px;
+      color: $firstColor;
+      transform: scaleX(1.4);
+      transform-origin: 0 0;
+    }
+    p:nth-of-type(1) {
+      font-size: 22px;
+      color: $firstColor;
+      letter-spacing: 2px;
+      line-height: 1.3;
+    }
+    p:nth-of-type(2) {
+      font-size: 15px;
+      color: $firstColor;
+      text-align: justify;
+      letter-spacing: 1.5px;
+      line-height: 1.3;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        padding-bottom: 4px;
+        margin: 0 12px 5px 0;
+        font-size: 15px;
+        font-weight: 520;
+        letter-spacing: 0.5px;
+        border-bottom: 1.2px solid black;
+        opacity: 0.6;
+      }
+    }
+    p:nth-of-type(3) {
+      font-size: 11px;
+      line-height: 1.3;
+      opacity: 0.5;
+    }
+  }
+  main {
+    width: 60%;
+    margin-left: 40%;
+    background-color: $firstColor;
+    #notice {
+      position: fixed;
+      top: 0;
+      left: 40%;
+      width: 60%;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($color: $firstColor, $alpha: 0.85);
+      border-bottom: 0.5px solid $secondColor;
+      p {
+        font-size: 22px;
+        color: white;
+        span {
+          color: $secondColor;
+          font-weight: 500;
+          border-bottom: 1px solid $secondColor;
+        }
+      }
+    }
+    #movie-lists {
+      width: 100%;
+      margin-top: 150px;
+      .movie {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(
+          to bottom,
+          $firstColor 90%,
+          $thirdColor 100%
+        );
+        padding: 75px 0 200px 75px;
+        margin: 0 auto;
+
+        .title {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-bottom: 40px;
+          color: white;
+          span:nth-child(1) {
+            letter-spacing: -2px;
+            font-size: 48px;
+            font-weight: bold;
+          }
+          span:nth-child(2) {
+            text-align: end;
+            letter-spacing: 1px;
+            font-size: 16px;
+          }
+        }
+        .thumbnail {
+          width: 100%;
+          margin-bottom: 40px;
+          box-shadow: 0 80px 80px -80px #2d0806;
+        }
+        p {
+          width: 100%;
+          margin: 0 0 20px 2px;
+          color: white;
+          font-size: 18px;
+          letter-spacing: 0.5px;
+          line-height: 1.2;
+        }
+        .rating {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          span:nth-child(1) {
+            font-size: 18px;
+            color: white;
+            transform-origin: 0, 0;
+            transform: scaleX(1.2);
+          }
+          span:nth-child(2) {
+            font-size: 18px;
+            font-weight: bold;
+            color: $secondColor;
+          }
+        }
+      }
+    }
+  }
+}

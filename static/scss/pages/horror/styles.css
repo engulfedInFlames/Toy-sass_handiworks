@@ -1,0 +1,69 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+#container__horror { position: inherit; height: inherit; }
+
+#container__horror header { overflow-x: hidden; position: fixed; top: 0; left: 0; width: 40%; height: inherit; display: flex; flex-direction: column; justify-content: space-between; padding: 65px 0 50px 75px; background-color: #f0f0f0; }
+
+#container__horror header h1, #container__horror header ul, #container__horror header p { width: 80%; }
+
+#container__horror header h1 { margin-bottom: 40px; font-size: 72px; color: #e7473c; transform: scaleX(1.4); transform-origin: 0 0; }
+
+#container__horror header p:nth-of-type(1) { font-size: 22px; color: #e7473c; letter-spacing: 2px; line-height: 1.3; }
+
+#container__horror header p:nth-of-type(2) { font-size: 15px; color: #e7473c; text-align: justify; letter-spacing: 1.5px; line-height: 1.3; }
+
+#container__horror header ul { display: flex; flex-wrap: wrap; }
+
+#container__horror header ul li { padding-bottom: 4px; margin: 0 12px 5px 0; font-size: 15px; font-weight: 520; letter-spacing: 0.5px; border-bottom: 1.2px solid black; opacity: 0.6; }
+
+#container__horror header p:nth-of-type(3) { font-size: 11px; line-height: 1.3; opacity: 0.5; }
+
+#container__horror main { width: 60%; margin-left: 40%; background-color: #e7473c; }
+
+#container__horror main #notice { position: fixed; top: 0; left: 40%; width: 60%; height: 160px; display: flex; justify-content: center; align-items: center; background-color: rgba(231, 71, 60, 0.85); border-bottom: 0.5px solid #9b2511; }
+
+#container__horror main #notice p { font-size: 22px; color: white; }
+
+#container__horror main #notice p span { color: #9b2511; font-weight: 500; border-bottom: 1px solid #9b2511; }
+
+#container__horror main #movie-lists { width: 100%; margin-top: 150px; }
+
+#container__horror main #movie-lists .movie { width: 90%; display: flex; flex-direction: column; background: linear-gradient(to bottom, #e7473c 90%, #d9281c 100%); padding: 75px 0 200px 75px; margin: 0 auto; }
+
+#container__horror main #movie-lists .movie .title { width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; color: white; }
+
+#container__horror main #movie-lists .movie .title span:nth-child(1) { letter-spacing: -2px; font-size: 48px; font-weight: bold; }
+
+#container__horror main #movie-lists .movie .title span:nth-child(2) { text-align: end; letter-spacing: 1px; font-size: 16px; }
+
+#container__horror main #movie-lists .movie .thumbnail { width: 100%; margin-bottom: 40px; box-shadow: 0 80px 80px -80px #2d0806; }
+
+#container__horror main #movie-lists .movie p { width: 100%; margin: 0 0 20px 2px; color: white; font-size: 18px; letter-spacing: 0.5px; line-height: 1.2; }
+
+#container__horror main #movie-lists .movie .rating { width: 100%; display: flex; justify-content: space-between; }
+
+#container__horror main #movie-lists .movie .rating span:nth-child(1) { font-size: 18px; color: white; transform-origin: 0, 0; transform: scaleX(1.2); }
+
+#container__horror main #movie-lists .movie .rating span:nth-child(2) { font-size: 18px; font-weight: bold; color: #9b2511; }
+
+* { box-sizing: border-box; }
+
+a { text-decoration: none; }
+
+li { list-style-type: none; }
+
+body { background-color: #e7473c; height: 100vh; }
+
+/*# sourceMappingURL=styles.css.map */

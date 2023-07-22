@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+<!-- blank -->
+{% block sass_link %}
+<!-- blank -->
+{% load sass_tags %}
+<link
+  href="{% sass_src 'scss/pages/horror/styles.scss' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- blank -->
+{% endblock %}
+<!-- blank -->
+{% block title %} Horror {% endblock %}
+<!-- blank -->
+{% block content %}
+
+<div id="container__horror">
+  <header>
+    <h1>BEST<br />HORROR<br />SCENES</h1>
+    <p>
+      An ever growing collection featuring some of the best scenes in horror.
+    </p>
+    <p>
+      “Best Horror Scenes” is a collection of scenes I feel are some of the most
+      affecting in horror. Some may be simple black cat scares, others may be
+      more subdued or nuanced. Many come from films that aren't necessarily
+      “horror” but have elements or threads of horror.
+    </p>
+    <ul>
+      <li>Newsletter</li>
+      <li>Suggest a Scene</li>
+      <li>YouTube</li>
+      <li>Twitter</li>
+      <li>Contact</li>
+      <li>RSS</li>
+      <li>Letterbox</li>
+    </ul>
+    <p>
+      Best Horror Scenes is a love letter to the Horror film genre by Brandon
+      Durham. Most film clips contain major spoilers, and it is recommended you
+      don’t watch the clip if you plan on seeing the film.
+    </p>
+  </header>
+  <main>
+    <div id="notice">
+      <p>
+        Currently viewing <span>everything</span> sorted by <span>random</span>.
+      </p>
+    </div>
+    <div id="movie-lists">
+      {% for _ in range %}
+      <div class="movie">
+        <div class="title">
+          <span>The Strangers (2008)</span>
+          <span>Directed by<br />Bryan Bertino</span>
+        </div>
+        <img class="thumbnail" src="{% sass_src 'images/horror_1.png' %}" />
+        <p class="description">
+          It seems I’m in the minority in my love for this film. Something just
+          works for me. The handheld camera work. The simple disguises. Their
+          deadpan and mumbled delivery. Their uncanny ability to be anywhere and
+          everywhere instantly. I remember having a tough time with the ending
+          originally, but now I can’t imagine it any other way.
+        </p>
+        <div class="rating">
+          <span>ー B</span>
+          <span>My rating: 8/10</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
+</div>
+
+{% endblock %}

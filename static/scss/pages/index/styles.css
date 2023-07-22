@@ -1,0 +1,35 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+* { box-sizing: border-box; }
+
+a { color: #2a2c30; text-decoration-style: none; text-decoration: none; }
+
+body { font-family: sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem 12rem; margin: 0 auto; background: linear-gradient(90deg, #f8f9fa 19px, transparent 1%) center, linear-gradient(#f8f9fa 19px, transparent 1%) center, #caa0b5; background-size: 20px 20px; }
+
+body h1 { text-align: center; font-size: 3rem; font-weight: bold; color: #2a2c30; text-shadow: 0px 4px 4px #848484; }
+
+body h1 span { letter-spacing: -0.25rem; color: #cf649a; text-shadow: 0px 4px 4px #caa0b5; }
+
+body div { display: flex; justify-content: space-between; align-items: center; padding: 4rem 2rem; }
+
+body div ul { min-width: 360px; display: flex; flex-direction: column; align-items: center; list-style: none; margin: 0; padding: 0; }
+
+body div ul li { text-align: center; }
+
+body div ul li a { cursor: pointer; display: block; width: 440px; min-width: 280px; background-color: #cf649a; color: #f8f9fa; font-size: 1.75rem; font-weight: bold; padding: 1rem 0; margin: 1rem 2rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 0.4rem; border: 0.15px solid #cf649a; transition: border 0.5s, background-color 0.5s, color 0.5s; }
+
+body div ul li a:hover { color: #cf649a; background-color: #f8f9fa; }
+
+/*# sourceMappingURL=styles.css.map */

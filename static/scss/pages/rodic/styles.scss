@@ -1,0 +1,112 @@
+@import "../../reset";
+@import "main";
+
+$contentWidth: 75%;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+a {
+  text-decoration-style: none;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+::selection {
+  background: #294f38;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: serif;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+header {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  user-select: none;
+  background-color: white;
+  nav {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    div {
+      width: (100% - $contentWidth);
+      padding-left: 18px;
+      > span {
+        color: #9d9d9d;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0s linear;
+        .logo {
+          color: black;
+        }
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+  display: grid;
+  margin-top: 72px;
+  .wrapper {
+    width: $contentWidth;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: (100% - $contentWidth);
+    padding-right: 18px;
+    .item-container {
+      height: 650px;
+      .item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .item__title {
+          &.bold {
+            font-weight: 500;
+            margin-bottom: 24px;
+          }
+          &:not(.bold) {
+            margin-top: 12px;
+          }
+        }
+        .item__text {
+          line-height: 1.2;
+        }
+        .item__img {
+          height: 85%;
+          background-image: url("https://images.unsplash.com/photo-1671821094908-bf4637874d01?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=560&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDI3ODEyMQ&ixlib=rb-4.0.3&q=80&w=515");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &.small {
+        height: 400px;
+      }
+    }
+  }
+}

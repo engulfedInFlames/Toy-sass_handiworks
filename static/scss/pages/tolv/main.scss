@@ -1,0 +1,174 @@
+$orangeA: #fd6b3a;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  min-height: 100vh;
+}
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px rgb(99, 99, 99);
+  nav {
+    width: 85%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      li {
+        user-select: none;
+        width: 33%;
+        &:nth-child(1) {
+          span {
+            cursor: pointer;
+            margin-right: 28px;
+          }
+        }
+        &:nth-child(2) {
+          div {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            .letter__O {
+              transform: rotateZ(-15deg);
+              margin-left: -3px;
+              margin-right: 1px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          cursor: pointer;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+main {
+  .exhibit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .exhibit__imgs {
+      grid-column-start: 1;
+      img {
+        width: 100%;
+        height: 750px;
+      }
+    }
+    .exhibit__quote {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 200px;
+      p {
+        width: 65%;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 40px;
+      }
+      span {
+        font-family: serif;
+        font-size: 12px;
+        a {
+          color: $orangeA;
+        }
+      }
+    }
+  }
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efcb56;
+    .about__wrapper {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 130px 0 100px 0;
+      .about__sitename {
+        font-size: 48px;
+      }
+      .about__description {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.3;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+      .about__more {
+        font-family: serif;
+        font-size: 12px;
+        a {
+          color: $orangeA;
+        }
+      }
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-rows: repeat(4, 33vh);
+    grid-template-columns: repeat(4, 1fr);
+    .product {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      &:nth-child(1) {
+        grid-column: 1 / 3;
+      }
+      &:nth-child(4) {
+        grid-column: 1 / 3;
+      }
+      &:nth-child(9) {
+        grid-column: -3 / -1;
+      }
+      &:nth-child(12) {
+        grid-column: -3 / -1;
+      }
+      .product__bg {
+        width: 100%;
+        height: 100%;
+        background-image: url("/static/images/tolv_3.jpg");
+        background-size: cover;
+        background-position: center;
+        transition: filter 0.15s linear;
+        &:hover {
+          filter: blur(80px);
+        }
+      }
+      .product__text {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+}
+footer {
+  display: grid;
+}

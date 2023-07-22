@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+<!-- blank -->
+{% block sass_link %}
+<!-- blank -->
+{% load sass_tags %}
+<link
+  href="{% sass_src 'scss/pages/10x19/styles.scss' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- blank -->
+{% endblock %}
+<!-- blank -->
+{% block title %} 10x19 {% endblock %}
+<!-- blank -->
+{% block content %}
+<div class="grid-container">
+  <div class="header">
+    <div>10x19</div>
+    <div></div>
+    <div>menu</div>
+  </div>
+  <div class="wrapper">
+    <div class="left">
+      <div class="number">#10</div>
+      <div class="number">#9</div>
+      <div class="number">#8</div>
+      <div class="number">#7</div>
+      <div class="number">#6</div>
+    </div>
+    <div class="center"></div>
+    <div class="right">
+      <div class="number">#5</div>
+      <div class="number">#4</div>
+      <div class="number">#3</div>
+      <div class="number">#2</div>
+      <div class="number">#1</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div></div>
+    <div>
+      <span class="animated-text">&copy; copyright all reserved</span>
+    </div>
+    <div></div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+body main .more-info > div button, body main .additional div .article-info__btn button, body main article:not(.additional):nth-of-type(even) div:nth-child(1) .article-info__btn button, body main article:not(.additional):nth-of-type(odd) div:nth-child(1) .article-info__btn button { all: unset; width: 144px; text-align: center; padding: 12px 0; font-size: 18px; border: 0.3px solid rgba(0, 0, 0, 0.3); border-radius: 30px; cursor: pointer; }
+
+* { box-sizing: border-box; }
+
+a { text-decoration: none; }
+
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; min-height: 100vh; }
+
+body header { z-index: 999; position: fixed; top: 0; width: 100%; height: 100px; background-color: white; border-bottom: 0.3px solid black; }
+
+body header nav { width: 100%; height: 100%; display: flex; }
+
+body header nav .sidebar { width: 5%; display: flex; justify-content: center; align-items: center; padding-left: 20px; }
+
+body header nav .sidebar i { font-size: 36px; }
+
+body header nav .menu-panel { width: 95%; display: flex; justify-content: space-between; user-select: none; }
+
+body header nav .menu-panel span { font-size: 56px; font-weight: 600; letter-spacing: -2px; line-height: 100px; cursor: pointer; transform: scaleX(0.7); }
+
+body header nav .menu-panel span:last-child { margin-right: 90px; }
+
+body main { width: 70%; display: flex; flex-direction: column; margin: 0 auto; margin-bottom: 80px; }
+
+body main .cover { width: 100%; min-height: 80vh; display: flex; flex-direction: column; align-items: center; margin-top: 150px; }
+
+body main .cover img { width: 70%; }
+
+body main .cover div { width: 100%; height: 40px; position: relative; display: flex; margin-top: 60px; margin-bottom: 120px; }
+
+body main .cover div span { width: 100%; font-size: 32px; font-weight: bold; text-align: center; }
+
+body main .cover div i { position: absolute; right: 30px; font-size: 40px; }
+
+body main .about { width: 100%; display: flex; flex-direction: column; align-items: center; margin-bottom: 120px; }
+
+body main .about div:nth-child(1) { position: relative; width: 100%; }
+
+body main .about div:nth-child(1) p { font-size: 36px; line-height: 48px; text-align: justify; margin-bottom: 15px; }
+
+body main .about div:nth-child(1) p::before { content: "About"; margin-right: 64px; font-size: 24px; }
+
+body main .about div:nth-child(2) { width: 100%; display: flex; align-items: center; font-size: 24px; font-weight: bold; cursor: pointer; }
+
+body main .about div:nth-child(2) i { padding-right: 12px; transition: margin-right 0.15s linear; }
+
+body main .about div:nth-child(2) i:hover { margin-right: 5px; }
+
+body main .about div:nth-child(2) span { transition: margin-left 0.15s linear; }
+
+body main .about div:nth-child(2) span:hover { margin-left: 5px; }
+
+body main article:not(.additional) { position: relative; width: 100%; display: flex; justify-content: space-between; padding: 20px 0; border-top: 0.5px solid rgba(0, 0, 0, 0.3); }
+
+body main article:not(.additional) .article-info h3 { margin-bottom: 40px; font-size: 26px; }
+
+body main article:not(.additional) .article-info p { font-size: 30px; line-height: 1.2; }
+
+body main article:not(.additional) .article-info .article-info__btn { position: absolute; bottom: 20px; }
+
+body main article:not(.additional) .article-img { width: 48%; }
+
+body main article:not(.additional) .article-img img { width: 100%; height: 320px; }
+
+body main article:not(.additional):nth-of-type(odd) div:nth-child(1) { width: 48%; display: flex; flex-direction: column; }
+
+body main article:not(.additional):nth-of-type(odd) div:nth-child(1) .article-info__btn { display: flex; }
+
+body main article:not(.additional):nth-of-type(odd) div:nth-child(1) .article-info__btn button { margin-right: 10px; }
+
+body main article:not(.additional):nth-of-type(even) div:nth-child(1) { order: 1; width: 48%; display: flex; flex-direction: column; }
+
+body main article:not(.additional):nth-of-type(even) div:nth-child(1) .article-info__btn { display: flex; }
+
+body main article:not(.additional):nth-of-type(even) div:nth-child(1) .article-info__btn button { margin-right: 10px; }
+
+body main .additional { width: 100%; display: flex; justify-content: space-between; padding: 20px 0; border-top: 0.5px solid rgba(0, 0, 0, 0.3); }
+
+body main .additional div { width: 48%; display: flex; flex-direction: column; }
+
+body main .additional div h3 { font-size: 26px; margin-bottom: 30px; }
+
+body main .additional div img { width: 100%; height: 320px; margin-bottom: 20px; }
+
+body main .additional div p { font-size: 22px; line-height: 1.2; margin-bottom: 40px; }
+
+body main .additional div .article-info__btn { display: flex; flex-direction: row; }
+
+body main .additional div .article-info__btn button { margin-right: 10px; }
+
+body main .more-info { width: 100%; display: flex; padding: 20px 0; border-top: 0.5px solid rgba(0, 0, 0, 0.3); }
+
+body main .more-info > div h3 { font-size: 26px; margin-bottom: 40px; }
+
+body main .more-info > div p { font-size: 22px; line-height: 1.2; margin-bottom: 40px; }
+
+body footer { width: 100%; height: 310px; background-color: #464646; color: white; }
+
+body footer .footer-wrapper { width: 70%; display: flex; margin: 0 auto; padding-top: 30px; }
+
+body footer .footer-wrapper .Schwartz { width: 50%; display: flex; flex-direction: column; }
+
+body footer .footer-wrapper .Schwartz span:nth-child(1) { width: 100%; font-size: 32px; font-weight: bold; letter-spacing: -2px; margin-bottom: 120px; }
+
+body footer .footer-wrapper .Schwartz span:nth-child(2) { margin-bottom: 8px; }
+
+body footer .footer-wrapper .Schwartz span:nth-child(3) { margin-bottom: 24px; }
+
+body footer .footer-wrapper .Schwartz span:nth-child(4) { line-height: 1.4; }
+
+body footer .footer-wrapper .Schwartz-media { width: 25%; }
+
+body footer .footer-wrapper .Schwartz-books { width: 25%; text-align: end; }
+
+/*# sourceMappingURL=styles.css.map */

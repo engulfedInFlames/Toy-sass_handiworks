@@ -1,0 +1,92 @@
+@import "../../reset";
+
+$sass-main-color: #cf649a;
+$sass-main-shadow-color: #caa0b5;
+$sass-font-color: #2a2c30;
+$sass-font-shadow-color: #848484;
+$sass-bg-color: #f8f9fa;
+
+$dot-size: 1px;
+$dot-space: 20px;
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: $sass-font-color;
+  text-decoration-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 12rem;
+  margin: 0 auto;
+  background: linear-gradient(
+        90deg,
+        $sass-bg-color ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($sass-bg-color ($dot-space - $dot-size), transparent 1%)
+      center,
+    $sass-main-shadow-color;
+  background-size: $dot-space $dot-space;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $sass-font-color;
+    text-shadow: 0px 4px 4px $sass-font-shadow-color;
+    span {
+      letter-spacing: -0.25rem;
+      color: $sass-main-color;
+      text-shadow: 0px 4px 4px $sass-main-shadow-color;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    ul {
+      min-width: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        text-align: center;
+
+        a {
+          cursor: pointer;
+          display: block;
+          width: 440px;
+          min-width: 280px;
+          background-color: $sass-main-color;
+
+          color: $sass-bg-color;
+          font-size: 1.75rem;
+          font-weight: bold;
+
+          padding: 1rem 0;
+          margin: 1rem 2rem;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border-radius: 0.4rem;
+          border: 0.15px solid $sass-main-color;
+          transition: border 0.5s, background-color 0.5s, color 0.5s;
+          &:hover {
+            color: $sass-main-color;
+            background-color: $sass-bg-color;
+          }
+        }
+      }
+    }
+  }
+}

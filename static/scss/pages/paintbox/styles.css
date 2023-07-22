@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* { box-sizing: border-box; }
+
+ul { padding: 0; }
+
+ul li { list-style-type: none; }
+
+body { font-family: "Nunito Sans", sans-serif; width: 100vw; height: 150vh; display: flex; flex-direction: column; justify-content: space-between; color: #414141; overflow-x: hidden; }
+
+body header { z-index: 1; top: 0; position: fixed; width: inherit; height: 140px; display: flex; justify-content: center; align-items: center; user-select: none; background-color: white; }
+
+body header .container { width: 100%; display: flex; padding: 72px 130px; justify-content: space-between; align-items: center; font-family: "Nunito Sans", sans-serif; font-size: 9px; font-weight: bold; letter-spacing: 2px; }
+
+body header .container div { height: 72px; display: flex; align-items: center; }
+
+body header .container div:first-child { width: 240px; }
+
+body header .container div:first-child span:first-child { margin-right: 35px; }
+
+body header .container div:nth-child(2) img { height: 100px; object-fit: fill; }
+
+body header .container div:last-child { justify-content: flex-end; width: 240px; }
+
+body header .container div:last-child i { font-size: 20px; margin: 0 10px 5px 35px; }
+
+body main { width: inherit; height: 100%; padding: 0 140px; margin-top: 140px; }
+
+body main .img-L-container { position: relative; }
+
+body main .img-L-container .img-container { width: 100%; }
+
+body main .img-L-container .img-container img { width: 100%; object-fit: fill; }
+
+body main .img-L-container .text-container { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; background-color: rgba(0, 0, 0, 0.1); }
+
+body main .img-L-container .text-container span { width: 490px; margin-bottom: 30px; font-size: 9px; font-weight: bold; text-align: center; letter-spacing: 2px; }
+
+body main .img-L-container .text-container p { user-select: none; width: 490px; font-size: 50px; font-weight: 300; margin-bottom: 30px; text-align: center; }
+
+body main .img-L-container .text-container button { width: 490px; padding: 22px 76px; font-size: 9px; font-weight: bold; letter-spacing: 2px; color: white; background: none; border: 1px solid white; border-color: white; }
+
+body main .email { height: 270px; display: flex; justify-content: center; align-items: center; font-size: 40px; line-height: 45px; }
+
+body main .email span { transform-origin: 0, 0; transform: scaleX(0.8); }
+
+body main .email span span { color: #9d9d9c; font-weight: 300; }
+
+body footer { width: inherit; height: 270px; display: flex; justify-content: center; align-items: center; padding: 60px 40px; background-color: #f3ede8; font-size: 8px; font-weight: 700; letter-spacing: 2px; line-height: 2.5; text-align: center; }
+
+body footer .column { width: 33.333%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
+
+body footer .column span { margin-bottom: 20px; opacity: 0.5; }
+
+body footer .column:nth-child(2) { border-left: 0.5px solid #414141; border-right: 0.5px solid #414141; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*# sourceMappingURL=styles.css.map */

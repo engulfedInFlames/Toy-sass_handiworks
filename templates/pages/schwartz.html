@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+<!-- blank -->
+{% block sass_link %}
+<!-- blank -->
+{% load sass_tags %}
+<link
+  href="{% sass_src 'scss/pages/schwartz/styles.scss' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- blank -->
+{% endblock %}
+<!-- blank -->
+{% block title %} Schwartz {% endblock %}
+<!-- blank -->
+{% block content %}
+<header>
+  <nav>
+    <div class="sidebar">
+      <i class="fas fa-bars on-off"></i>
+    </div>
+    <div class="menu-panel">
+      <span> Schwartz </span>
+      <span> media </span>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="cover">
+    <img src={% sass_src 'images/schwartz_1.jpg' %} />
+    <div>
+      <span>News that lasts</span>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+  </div>
+  <div class="about">
+    <div>
+      <p>
+        Schwartz Media publishes intelligent news and current affairs that
+        breaks the 24-hour news cycle. We offer a nuanced examination of
+        Australia and the world, focused on fresh insight and literary
+        expression. Our audience reads to know, not just to agree. We invest in
+        long-form journalism where the issues demand it, providing writing of a
+        quality that makes difficult topics clear. Schwartz Media publishes
+        Australia’s most respected writers across The Saturday Paper, The
+        Monthly magazine and the daily podcast 7am, alongside our sister
+        publications, Quarterly Essay and Australian Foreign Affairs.
+      </p>
+    </div>
+    <div>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <span>View our Companines</span>
+    </div>
+  </div>
+  <article>
+    <div class="article-info">
+      <h3>Journalism</h3>
+      <p>
+        Our journalists create in-depth, independent, original public interest
+        reporting, focusing on storytelling and insight.
+      </p>
+      <div class="article-info__btn">
+        <button>learn more</button>
+      </div>
+    </div>
+    <div class="article-img">
+      <img src={% sass_src 'images/schwartz_2.jpg' %} />
+    </div>
+  </article>
+  <article>
+    <div class="article-info">
+      <h3>The Monthly</h3>
+      <p>
+        The Monthly publishes long-form journalism from the nation's leading
+        writers and thinkers, covering Australian politics, culture and ideas.
+      </p>
+      <div class="article-info__btn">
+        <button>learn more</button>
+        <button>advertise</button>
+      </div>
+    </div>
+    <div class="article-img">
+      <img src={% sass_src 'images/schwartz_3.jpg' %} />
+    </div>
+  </article>
+  <article>
+    <div class="article-info">
+      <h3>The Saturday Paper</h3>
+      <p>
+        The Saturday Paper is a weekly newspaper, dedicated to telling the whole
+        story. It publishes long-form accounts of the week’s key stories.
+      </p>
+      <div class="article-info__btn">
+        <button>learn more</button>
+        <button>advertise</button>
+      </div>
+    </div>
+    <div class="article-img">
+      <img src={% sass_src 'images/schwartz_2.jpg' %} />
+    </div>
+  </article>
+  <article>
+    <div class="article-info">
+      <h3>7am</h3>
+      <p>
+        7am is a daily news podcast that tells the big stories through in-depth
+        interviews and sharp analysis.
+      </p>
+      <div class="article-info__btn">
+        <button>learn more</button>
+        <button>advertise</button>
+      </div>
+    </div>
+    <div class="article-img">
+      <img src={% sass_src 'images/schwartz_3.jpg' %} />
+    </div>
+  </article>
+  <article class="additional">
+    <div>
+      <h3>Quarterly Essay</h3>
+      <img src={% sass_src 'images/schwartz_2.jpg' %} />
+      <p>
+        Quarterly Essay is the leading agenda-setting journal of politics and
+        culture in Australia.
+      </p>
+      <div class="article-info__btn">
+        <button>learn more</button>
+        <button>advertise</button>
+      </div>
+    </div>
+    <div>
+      <h3>Australian Foreign Affairs</h3>
+      <img src={% sass_src 'images/schwartz_3.jpg' %} />
+      <p>
+        Australian Foreign Affairs is the country’s leading foreign affairs
+        journal.
+      </p>
+      <div class="article-info__btn">
+        <button>learn more</button>
+        <button>advertise</button>
+      </div>
+    </div>
+  </article>
+  <div class="more-info">
+    <div class="more-info__careers">
+      <h3>Careers</h3>
+      <p>Work at the country’s leading independent publisher.</p>
+      <button>learn more</button>
+    </div>
+    <div class="more-info__news">
+      <h3>News</h3>
+      <p>Keep in touch with what is happening at Schwartz Media.</p>
+      <button>learn more</button>
+    </div>
+    <div class="more-info__contact">
+      <h3>Contact</h3>
+      <p>Get in touch with our editorial and advertising teams.</p>
+      <button>learn more</button>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="footer-wrapper">
+    <div class="Schwartz">
+      <span>Schwartz</span>
+      <span>Terms & Conditions</span>
+      <span>Privacy Policy</span>
+      <span
+        >&copy; 2023 Schwartz Publishing<br />
+        All rights reserved</span
+      >
+    </div>
+    <div class="Schwartz-media">Schwartz Media</div>
+    <div class="Schwartz-books">Schwartz Books</div>
+  </div>
+</footer>
+{% endblock %}

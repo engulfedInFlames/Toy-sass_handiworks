@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+<!-- blank -->
+{% block sass_link %}
+<!-- blank -->
+{% load sass_tags %}
+<link
+  href="{% sass_src 'scss/pages/tolv/styles.scss' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- blank -->
+{% endblock %}
+<!-- blank -->
+{% block title %} Tolv {% endblock %}
+<!-- blank -->
+{% block content %}
+<header>
+  <nav>
+    <ul>
+      <li><span>Products</span><span>Stockists</span><span>About us</span></li>
+      <li>
+        <div>
+          T
+          <div class="letter__O">o</div>
+          lv
+        </div>
+      </li>
+      <li><span>Search</span></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="exhibit">
+    <ul class="exhibit__imgs">
+      <li><img src={% sass_src 'images/tolv_1.jfif' %} alt="" /></li>
+      <li><img src={% sass_src 'images/tolv_2.jfif' %} alt="" /></li>
+      <li><img src={% sass_src 'images/tolv_1.jfif' %} alt="" /></li>
+    </ul>
+    <aside class="exhibit__quote">
+      <p>
+        Sunset is a good time to gather. Evening light bathes the space in warm
+        tones and colours.
+      </p>
+      <span
+        >Featuring <a href="#">Copal Sofa</a> and
+        <a href="#">Fromage poufs</a></span
+      >
+    </aside>
+  </div>
+  <div class="about">
+    <div class="about__wrapper">
+      <span class="about__sitename">Time for Living</span>
+      <p class="about__description">
+        Take time for life’s little moments. Browsing the news as you eat
+        breakfast. Setting the table for hungry guests. Sinking in to your
+        favourite armchair. At Tolv, your daily rituals are at the heart of our
+        design. We make furniture to give you your best day, every day.
+      </p>
+      <span class="about__more">Find out more <a href="#">About us</a></span>
+    </div>
+  </div>
+  <div class="products">
+    {% for _ in range %}
+    <div class="product">
+      <div class="product__bg"></div>
+      <div class="product__text">
+        <span>Beach Here</span>
+        <span>――――――――＞</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+
+{% endblock %}

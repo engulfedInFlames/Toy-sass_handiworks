@@ -1,0 +1,61 @@
+$fontColor: #af7832;
+$fontSize: 21px;
+$LineHeight: 21px;
+
+@mixin content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $fontColor;
+  font-size: $fontSize;
+  letter-spacing: 1.2px;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  .grid-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 64px 1fr 64px;
+    grid-template-columns: 1fr;
+    background-color: $fontColor;
+    text-transform: uppercase;
+    gap: 1px;
+    .header,
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr minmax(585px, 615px) 1fr;
+      gap: 1px;
+      div {
+        @include content();
+      }
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr minmax(585px, 615px) 1fr;
+      .left,
+      .right {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        gap: 1px;
+        .number {
+          @include content();
+          transition: background-color 0.2s linear, color 0.2s linear;
+          &:hover {
+            background-color: $fontColor;
+            color: white;
+          }
+        }
+      }
+      .center {
+        background-image: url(https://images.unsplash.com/photo-1617897903246-719242758050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}

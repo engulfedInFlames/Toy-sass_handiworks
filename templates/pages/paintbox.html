@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+<!-- blank -->
+{% block sass_link %}
+<!-- blank -->
+{% load sass_tags %}
+<link
+  href="{% sass_src 'scss/pages/paintbox/styles.scss' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- blank -->
+{% endblock %}
+<!-- blank -->
+{% block title %} Paintbox {% endblock %}
+<!-- blank -->
+{% block content %}
+
+<header>
+  <div class="container">
+    <div>
+      <span>NAIL STUDIO</span>
+      <span>SHOP PRODUCT</span>
+    </div>
+    <div><img src={%sass_src 'images/paintbox_2.png'%} /></div>
+    <div>
+      <span>JOURNAL</span>
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="img-L-container">
+    <div class="img-container">
+      <img src={%sass_src 'images/paintbox_1.jpg'%} />
+    </div>
+    <div class="text-container">
+      <span>HOLIDAY '22: LIKE SATIN</span>
+      <p>
+        Introducing our newest shade, Like Satin, just in time for the holidays.
+        This ultra-modern teal is an absolute must-have in your
+        collection...trust us.
+      </p>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+  <div class="email">
+    <span>Follow us at <span>@paintboxnails</span></span>
+  </div>
+</main>
+<footer>
+  <div class="column">
+    <span>SUPPORT</span>
+    <ul>
+      <li>F.A.Q</li>
+      <li>PRIVACH POLICY</li>
+      <li>TERMS AND CONDTIONS</li>
+      <li>ACCESSIBILITY</li>
+    </ul>
+  </div>
+  <div class="column">
+    <span>FOLLOW US</span>
+    <ul>
+      <li>INSTAGRAM</li>
+      <li>PINTEREST</li>
+      <li>FACEBOOK</li>
+      <li>NEWSLETTER</li>
+    </ul>
+  </div>
+  <div class="column">
+    <span>PAINTBOX</span>
+    <ul>
+      <li>OUR STUDIO</li>
+      <li>CAREERS</li>
+      <li>PRESS</li>
+      <li>CONTACT US</li>
+    </ul>
+  </div>
+</footer>
+
+{% endblock %}
