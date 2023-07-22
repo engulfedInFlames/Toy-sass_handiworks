@@ -32,7 +32,7 @@ def renderRodic(request):
     return render(request, "pages/rodic.html")
 
 def renderBeige(request):
-    return render(request, "pages/begie.html")
+    return render(request, "pages/beige.html")
 
 def renderZoo(request):
     return render(request, "pages/zoo.html")
